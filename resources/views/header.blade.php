@@ -13,10 +13,6 @@
         padding-left: 1%;
     }
 
-    .flex25 {
-        flex: 0.25;
-    }
-
     #pagesHeader div {
         float: left;
         padding: 0 15px;
@@ -41,36 +37,35 @@
             </div>
         </div>
     </div>
-    <div class="bgCover" style=" background: url(pictures/test.jpg) no-repeat 0 0;background-size: cover;">
+    <div class="bgCover" style=" background: url(pictures/test.jpg) no-repeat 0 0;background-size:cover">
         <div id="lowerHeader" class="w100 mainColor2 pdT25 pdB25 grayTransparent7 txtRegular">
             <div class="flex w80 elemCenter justifySpaceBetween alignMiddleItem">
                 <div id="logoHeader" class="flex25">
                     <img src="pictures/logowhite.png" width=150px />
                 </div>
                 <div id="pagesHeader">
-                    <div>Home</div>
-                    <div>About Us</div>
-                    <div>Services</div>
-                    <div>Contact Us</div>
-                    <div>login/Signup</div>
+                    @foreach(trans()->get('content.pages') as $key => $value)
+                    <div>{{$value}}</div>
+                    @endforeach
                 </div>
             </div>
         </div>
-        <div class="mainColor2 flex flex-col alignMiddleItem justifyCenter w100 upper blackTransparent5"
-            style="height:100%;">
+        <div class="mainColor2 flex flex-col alignMiddleItem justifyCenter w100 h100 upper blackTransparent5">
             <div class="">
                 <h1 class="txtTitle txtCenter">
-                    Get Ready For Real <span class="mainColor"> Challenges </span>
+                    {{__('content.home.sectionOne.bigTitle')}}
+                    <span class="mainColor">{{__('content.home.sectionOne.specialTitle')}}</span>
                 </h1>
             </div>
             <div class="">
                 <h2 class="txtSubtitle txtCenter">
-                    Real <span class="mainColor">Challenges</span> With <span class="mainColor">Athletes</span>
+                    {{__('content.home.sectionOne.bigSubTitle')}}
+                    <span class="mainColor"> {{__('content.home.sectionOne.specialSubTitle')}}</span>
                 </h2>
             </div>
             <div class="pdT150">
                 <button class="btn txtMedium">
-                    Join Us
+                    {{__('content.home.sectionOne.joinBtn')}}
                 </button>
             </div>
         </div>

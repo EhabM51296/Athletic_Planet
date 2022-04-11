@@ -91,6 +91,9 @@
   .flex20{
     flex: 0.2;
   }
+  .flex25 {
+    flex: 0.25;
+}
   .flex30{
     flex: 0.3;
   }
@@ -125,9 +128,9 @@
     grid-template-columns: auto auto;
   }
   .gridGap{
-    gap: 10px 10px;
+    gap: 20px 20px;
   }
-  @media(max-width:600px)
+  @media(max-width:719px)
   { 
     .grid{
         grid-template-columns: auto !important; 
@@ -241,8 +244,8 @@
     font-family: var(--fontFamilyText);
     line-height: 1.5;
 }
-/* @media(min-width:801px)
-{ */
+@media(min-width:850px)
+{ 
   .txtTitle{ 
     font-size: 55px;
 }
@@ -250,7 +253,7 @@
     font-size: 45px;
 }
 .txtMiniTitle{
-    font-size: 20px;
+    font-size: 30px;
 }
 .txtMedium{
   font-size: 18px;
@@ -261,29 +264,29 @@
 .txtNormal{
     font-size: 15px;
 }
-/* } */
-/* @media(max-width:800px)
+} 
+@media(max-width:849px)
 {
   .txtTitle{ 
-    font-size: 30px;
+    font-size: 40px;
 }
 .txtSubtitle{
-    font-size: 20px;
+    font-size: 30px;
 }
 .txtMiniTitle{
-    font-size: 15px;
+    font-size: 20px;
 }
 .txtMedium{
-  font-size: 12px;
+  font-size: 13px;
 }
 .txtRegular{
-  font-size: 12px;;
+  font-size: 13px;;
 }
 .txtNormal{
     font-size: 10px;
 }
 }
-@media(max-width:500px)
+/* @media(max-width:719px)
 {
   .txtTitle{ 
     font-size: 25px;
@@ -303,7 +306,7 @@
 .txtNormal{
     font-size: 8px;
 }
-} */
+}  */
 /* text colors */
 .mainColor{
     color: var(--main-color);
@@ -581,9 +584,18 @@
 .w100{
   width: 100%;
 }
+@media(max-width:719px)
+{
+  .w100-sm{
+    width: 100% !important;
+  }
+}
 /* height */
 .h100{
   height: 100%;
+}
+.minH{
+  min-height:200px;
 }
 /* buttons */
 .btn{
@@ -644,6 +656,9 @@
 }
 .grayTransparent7{
   background-color: rgba(10,10,10,0.7);
+}
+.blueTransparent5{
+  background-color: rgba(30,144,255,0.9);
 }
 .bgCover{
 background-size: cover;
