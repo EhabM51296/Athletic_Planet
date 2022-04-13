@@ -1,0 +1,101 @@
+/* text align */
+.txtLeft {
+    text-align: right;
+}
+.txtRight {
+    text-align: left;
+}
+/* element align */
+.elemLeft {
+    margin-left: auto;
+}
+.elemRight {
+    margin-right: auto;
+}
+/* padding */
+.pdL0 {
+    padding-right: 0 !important;
+}
+.pdL1 {
+    padding-right: 1%;
+}
+.pdL5 {
+    padding-right: 5%;
+}
+.pdL10 {
+    padding-right: 10%;
+}
+.pdL15 {
+    padding-right: 15%;
+}
+.pdL20 {
+    padding-right: 20%;
+}
+.pdL25 {
+    padding-right: 25%;
+}
+.pdL30 {
+    padding-right: 30%;
+}
+.pdL35 {
+    padding-right: 35%;
+}
+.pdL40 {
+    padding-right: 40%;
+}
+.pdL45 {
+    padding-right: 45%;
+}
+.pdL50 {
+    padding-right: 50%;
+}
+.pdL55 {
+    padding-right: 55%;
+}
+.pdL60 {
+    padding-right: 60%;
+}
+.pdL65 {
+    padding-right: 65%;
+}
+.pdL70 {
+    padding-right: 70%;
+}
+.pdL75 {
+    padding-right: 75%;
+}
+.pdL80 {
+    padding-right: 80%;
+}
+.pdL85 {
+    padding-right: 85%;
+}
+.pdL90 {
+    padding-right: 90%;
+}
+.pdL95 {
+    padding-right: 95%;
+}
+.pdL100 {
+    padding-right: 100%;
+}
+@media(max-width:550px)
+{
+    .pdL5-sm{
+        padding-right: 5% !important;
+    }
+}
+.pdR1 {
+    padding-left: 1%;
+}
+/* float */
+.floatL {
+    float: right !important;
+}
+.floatR {
+    float: left !important;
+}
+/* border */
+.borderR1 {
+    border-left: 1px solid white;
+}

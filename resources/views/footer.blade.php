@@ -8,17 +8,17 @@
             </div>
             <div id="footerDesc">
                 <p class="w80 elemCenter txtNormal pdT20">
-                    {{__('content.footer.desc')}}
+                    {{__('other.webDesc')}}
                 </p>
             </div>
         </div>
         <div id="footerServices" class="flex100">
             <div>
                 <h2 class="txtMiniTitle">
-                    {{__('content.home.serviceTitles.title')}}
+                    {{__('services.title')}}
                 </h2>
             </div>
-            @foreach(trans()->get('content.home.services') as $key => $value)
+            @foreach(trans()->get('services.serviceList') as $key => $value)
             <div class="pdT10">
                 <h2 class="txtNormal">
                     {{$value['title']}}
@@ -29,27 +29,27 @@
         <div id="footerSocialMedia" class="flex100">
             <div>
                 <h2 class="txtMiniTitle">
-                    {{__('content.footer.follow')}}
+                    {{__('other.webFollow')}}
                 </h2>
             </div>
             <div class="pdT10">
                 <h2 class="txtNormal">
-                    facebook
+                    {{__('other.webFacebook')}}
                 </h2>
             </div>
             <div class="pdT10">
                 <h2 class="txtNormal">
-                    Youtube
+                    {{__('other.webYoutube')}}
                 </h2>
             </div>
         </div>
         <div id="quickLinks" class="flex100">
             <div>
                 <h2 class="txtMiniTitle">
-                    {{__('content.footer.quick')}}
+                    {{__('other.webQuick')}}
                 </h2>
             </div>
-            @foreach(trans()->get('content.pages') as $key => $value)
+            @foreach(trans()->get('pagesName') as $key => $value)
             <div class="pdT10">
                 <h2 class="txtNormal">
                     {{$value}}

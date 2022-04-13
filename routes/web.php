@@ -12,4 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::view('/', 'home');
+
+// Route::group(['prefix' => '{language}'],function (){
+    Route::view('/', 'home');
+// });
+// Route::group(['middleware' => setLanguage::class],function (){
+//     Route::view('/', 'home');
+// });
