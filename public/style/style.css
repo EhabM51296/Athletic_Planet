@@ -77,6 +77,18 @@ body {
 .flex {
     display: flex;
 }
+@media(min-width:551px)
+{
+    .flex-L{
+        display: flex;
+    }
+}
+@media(max-width:550px)
+    {
+.flex-col-xs{
+    flex-direction:column;
+}
+}
 .flex-col {
     flex-direction: column;
 }
@@ -403,6 +415,24 @@ body {
     }
     .pdT15-sm {
         padding-top: 15px !important;
+    }
+}
+@media(max-width:550px)
+{
+    .pdT15-xs{
+        padding-top: 15px;
+    }
+    .pdT25-xs {
+        padding-top: 25px !important;
+    }
+    .pdB25-xs {
+        padding-bottom: 25px !important;
+    }
+    .pdT50-xs {
+        padding-top: 50px !important;
+    }
+    .pdB50-xs {
+        padding-bottom: 50px !important;
     }
 }
 .pdB0 {
